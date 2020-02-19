@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using static RichesWidgets.Program;
 
 namespace RichesWidgets {
     class SilverWidget : IProduct{
 
         private Product Product { get; set; }
+        public string GetModelName() {
+            return Product.GetModelName();
+        }
         public SilverWidget() {
             Product = new Product {
                 Code = "SW",
